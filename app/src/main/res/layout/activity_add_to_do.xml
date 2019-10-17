@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AppTheme"
+    tools:context=".AddToDoActivity">
+
+
+    <EditText
+        android:id="@+id/toDoEditText"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/ex_get_milk"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/importantCheckBox"
+        style="@style/Widget.AppCompat.CompoundButton.CheckBox"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/important"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toDoEditText" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/colorPrimary"
+        android:hapticFeedbackEnabled="true"
+        android:text="@string/add"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/importantCheckBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
